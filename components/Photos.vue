@@ -31,7 +31,7 @@
             <img src="~/static/images/felix-7.jpg" alt="Зайка" />
           </splide-slide>
            <splide-slide>
-            <img src="~/static/images/felix-8.jpg" alt="Зайка" />
+            <img src="https://0.soompi.io/wp-content/uploads/2019/12/24185514/stray-kids-felix-.jpg" alt="Зайка" />
           </splide-slide>
            <splide-slide>
             <img src="~/static/images/felix-9.png" alt="Зайка" />
