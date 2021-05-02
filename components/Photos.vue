@@ -84,15 +84,17 @@ export default {
 .splide__slide{
  max-width: 300px;
   max-height: 400px;
-  border: 3px solid #ee8695;
-  -webkit-box-shadow: 0px 6px 24px 3px rgba(41, 40, 49, 0.7);
-  -moz-box-shadow: 0px 6px 24px 3px rgba(41, 40, 49, 0.7);
-  box-shadow: 0px 6px 24px 3px rgba(41, 40, 49, 0.7);
+  border: 2px solid #333f58;
+
   overflow: hidden;
+   -webkit-box-shadow: 0px 20px 18px -13px rgba(41, 40, 49, 0.7);
+-moz-box-shadow: 0px 20px 18px -13px rgba(41, 40, 49, 0.7);
+box-shadow: 0px 20px 18px -13px rgba(41, 40, 49, 0.7);
 }
 img {
  width:100%;
  height: 100%;
  object-fit:cover;
+
 }
 </style>
