@@ -1,0 +1,21 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/main.js": "components/main.js",
+    "components/photos.js": "components/photos.js",
+    "pages/about.js": "pages/about.js",
+    "pages/index.js": "pages/index.js",
+    "pages/interview.js": "pages/interview.js",
+    "pages/photos.js": "pages/photos.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/main.js": "components/main.js.map",
+    "components/photos.js": "components/photos.js.map",
+    "pages/about.js": "pages/about.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/interview.js": "pages/interview.js.map",
+    "pages/photos.js": "pages/photos.js.map",
+    "server.js": "server.js.map"
+  }
+}
