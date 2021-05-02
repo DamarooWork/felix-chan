@@ -1,0 +1,7 @@
+.wrapper {
+  width: 1450px;
+  margin: 0 auto;
+  @media screen and (max-width: 1600px) {
+    width: 90%;
+  }
+}
