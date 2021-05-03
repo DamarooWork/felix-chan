@@ -1,13 +1,15 @@
 <template>
   <div class="about" >
-
+<Tabs/>
   </div>
 </template>
 
 <script>
+import Tabs from '../components/About/Tabs.vue'
 
 export default {
   components: {
+    Tabs
 
   },
 }

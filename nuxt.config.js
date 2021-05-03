@@ -43,5 +43,5 @@ export default {
   build: {
   },
   router: { base: '/felix-chan/' },
-  target: 'static'
+
 }
