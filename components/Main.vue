@@ -14,7 +14,7 @@ export default {};
 <style lang="scss" scoped>
 .main-text {
   margin-top: 50px;
-  min-height: 1000px;
+padding-bottom: 1000px;
 }
 .title {
 text-transform: uppercase;

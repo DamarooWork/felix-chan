@@ -1,14 +1,12 @@
 <template>
   <div class="navigation-block">
     <div class="wrapper flex">
-      <div class="left-links">
-        <nuxt-link class="tab" to="/">Home</nuxt-link>
-        <nuxt-link class="tab" to="/about">About</nuxt-link>
-        <nuxt-link class="tab" to="/photos">Photos</nuxt-link>
-        <nuxt-link class="tab" to="/interview">Interview</nuxt-link>
+      <div class="left-links" >
+        <nuxt-link v-for="item in links" :key="item.id" exact-active-class="tab_active" class="tab" :to="item.link"
+          ><p>{{item.name}}</p></nuxt-link>
       </div>
       <div class="right-links">
-        <nuxt-link class="tab" to="/">by Damaroo</nuxt-link>
+        <a class="tab" href="http://vk.com/damaroo">by Damaroo-chan</a>
       </div>
     </div>
   </div>
@@ -17,8 +15,28 @@
 <script>
 export default {
   data: () => ({
-    drawer: false,
-    group: null,
+    links: [
+      {
+        id: 1,
+        name: "Felix",
+        link: "/",
+      },
+      {
+        id: 2,
+        name: "About",
+        link: "/about",
+      },
+      {
+        id: 3,
+        name: "Photos",
+        link: "/photos",
+      },
+      {
+        id: 4,
+        name: "Interview",
+        link: "/interview",
+      },
+    ],
   }),
 };
 </script>
@@ -31,7 +49,7 @@ export default {
   align-items: center;
   background-color: #292831;
   min-height: 50px;
-  padding: 18px 30px;
+  padding: 10px 30px;
   border-radius: 0 0 8px 8px;
   -webkit-box-shadow: 0px 6px 24px 3px rgba(41, 40, 49, 0.4);
   -moz-box-shadow: 0px 6px 24px 3px rgba(41, 40, 49, 0.4);
@@ -64,7 +82,31 @@ export default {
   }
 }
 .tab {
+  position: relative;
+  text-align: center;
+  align-self: center;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  min-height: 30px;
   font-size: 22px;
   color: #fbbbad;
+  transform: scale(1);
+  transition: all 0.5s;
+  border-radius: 8px;
+  p {
+    transition: all 0.5s;
+  }
+  &:hover {
+    background-color: rgba(74, 122, 150, 0.7);
+  }
+  &:active {
+    color: #ee8695;
+  }
+}
+.tab_active {
+  color: #ee8695;
+  p {
+    transition: all 0.5s;
+  }
 }
 </style>

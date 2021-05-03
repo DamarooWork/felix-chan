@@ -16,7 +16,7 @@ export default {
 <style lang="scss" scoped>
 
 .interview{
-  min-height: 1000px;
+ min-height: 1000px;
 }
 
 </style>

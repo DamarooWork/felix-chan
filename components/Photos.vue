@@ -4,45 +4,11 @@
       <div class="title">
         <h2>Most popular photos</h2>
       </div>
-      <div class="images">
+      <div class="images" v-if="photos">
         <splide :options="primaryOptions" ref="primary">
-          <splide-slide>
-            <img src="~/static/images/felix-1.jpg" alt="Зайка" />
+          <splide-slide v-for="item in photos" :key="item.id">
+            <img :src="require(`~/static/images/${item.link}`)" alt="Зайка" />
           </splide-slide>
-          <splide-slide>
-            <img src="~/static/images/felix-2.jpg" alt="Зайка" />
-          </splide-slide>
-          <splide-slide>
-            <img src="~/static/images/felix-3.jpg" alt="Зайка" />
-          </splide-slide>
-           <splide-slide>
-            <img src="~/static/images/felix-3.png" alt="Зайка" />
-          </splide-slide>
-           <splide-slide>
-            <img src="~/static/images/felix-4.jpg" alt="Зайка" />
-          </splide-slide>
-           <splide-slide>
-            <img src="~/static/images/felix-5.jpg" alt="Зайка" />
-          </splide-slide>
-           <splide-slide>
-            <img src="~/static/images/felix-6.jpg" alt="Зайка" />
-          </splide-slide>
-           <splide-slide>
-            <img src="~/static/images/felix-7.jpg" alt="Зайка" />
-          </splide-slide>
-           <splide-slide>
-            <img src="https://0.soompi.io/wp-content/uploads/2019/12/24185514/stray-kids-felix-.jpg" alt="Зайка" />
-          </splide-slide>
-           <splide-slide>
-            <img src="~/static/images/felix-9.png" alt="Зайка" />
-          </splide-slide>
-            <splide-slide>
-            <img src="~/static/images/felix-10.jpeg" alt="Зайка" />
-          </splide-slide>
-            <splide-slide>
-            <img src="~/static/images/felix-11.jpg" alt="Зайка" />
-          </splide-slide>
-
         </splide>
       </div>
     </div>
@@ -58,12 +24,37 @@ export default {
         rewind: true,
         width: "100%",
         pagination: false,
-        perPage: 5,
+        perPage: 4,
         perMove: 1,
         arrows: true,
         autoWidth: true,
         gap: 20,
+        autoplay: true,
+        interval: 2000,
       },
+      photos:[{
+        id: 1, link: 'felix-1.jpg'
+      },{
+        id: 2, link: 'felix-2.jpg'
+      },{
+        id: 3, link: 'felix-3.jpg'
+      },{
+        id: 4, link: 'felix-4.jpg'
+      },{
+        id: 5, link: 'felix-5.jpg'
+      },{
+        id: 6, link: 'felix-6.jpg'
+      },{
+        id: 7, link: 'felix-7.jpg'
+      },{
+        id: 8, link: 'felix-8.jpg'
+      },{
+        id: 9, link: 'felix-9.png'
+      },{
+        id: 10, link: 'felix-10.jpeg'
+      },{
+        id: 11, link: 'felix-11.jpg'
+      }]
     };
   },
 };
@@ -71,7 +62,7 @@ export default {
 
 <style lang="scss" scoped>
 .photos {
-  min-height: 1000px;
+padding-bottom: 500px;
 }
 .title {
   color: #ee8695;
@@ -84,7 +75,7 @@ export default {
 .splide__slide{
  max-width: 300px;
   max-height: 400px;
-  border: 2px solid #333f58;
+  border: 2px solid #292831;
 
   overflow: hidden;
    -webkit-box-shadow: 0px 20px 18px -13px rgba(41, 40, 49, 0.7);

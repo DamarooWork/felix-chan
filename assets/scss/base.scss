@@ -20,27 +20,8 @@ time, mark, audio, video {
 a {
   text-decoration: none;
   color: inherit;
-  &:hover {
-    outline: 0;
-    color: #1787D8;
-  }
-
-  &:active {
-    color: #336699;
-  }
 }
 
-// nuxt-links
-nuxt-link {
-
-  &:hover {
-    color: #1787D8;
-  }
-
-  &:active {
-    color: #336699;
-  }
-}
 
 ul, li {
   font-family: 'SF Pro Display Regular';
