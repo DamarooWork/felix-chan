@@ -1,24 +1,21 @@
 <template>
-  <div class="about" >
-<Tabs/>
+  <div class="about">
+    <Tabs />
   </div>
 </template>
 
 <script>
-import Tabs from '../components/About/Tabs.vue'
+import Tabs from "../components/About/Tabs.vue";
 
 export default {
   components: {
-    Tabs
-
+    Tabs,
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-
-.about{
+.about {
   min-height: 1000px;
 }
-
 </style>
