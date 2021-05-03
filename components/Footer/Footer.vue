@@ -9,7 +9,7 @@
       <p> {{data}} © All rights reserved</p>
     </div>
     <div class="footer-items">
-     <a href="http://vk.com/damaroo">Developer</a>
+     <a href="http://vk.com/damaroo" target="_blank">Developer</a>
     </div>
 
 </div>

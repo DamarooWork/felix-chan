@@ -6,7 +6,7 @@
           ><p>{{item.name}}</p></nuxt-link>
       </div>
       <div class="right-links">
-        <a class="tab" href="http://vk.com/damaroo">by Damaroo-chan</a>
+        <a class="tab" href="http://vk.com/damaroo" target="_blank">by Damaroo-chan</a>
       </div>
     </div>
   </div>

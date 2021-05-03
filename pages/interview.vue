@@ -1,13 +1,15 @@
 <template>
   <div class="interview" >
-
+<Interview/>
   </div>
 </template>
 
 <script>
+import Interview from '../components/Interview/Interview.vue'
 
 export default {
   components: {
+    Interview
 
   },
 }
